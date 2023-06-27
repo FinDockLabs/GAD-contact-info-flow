@@ -9,7 +9,7 @@ A simple flow that triggers on the creation of a new Gift Aid Declaration (where
 
 ## Requirements
 
-This flow assumes that you have FinDock and NPSP installed, along with the FinDock for NPSP package, and the Gift Aid for FinDock package.
+This flow assumes that you have FinDock and NPSP installed, along with the FinDock for NPSP package, and the Gift Aid for FinDock package. It also assumes you are using the default Mailing Address fields on the Contact, and it's those fields you want to use when populating the address information on the Gift Aid Declaration.
 
 ## Installation
 
