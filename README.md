@@ -22,7 +22,7 @@ Install the and activate the flow (GAD - Create). To deploy the flow to your Sal
 
 This is only meant to be a starter to get you going - feel free to customise this flow to meet the needs of your nonprofit with additional fields and actions.
 
-This repository also include a new custom field on the Contact, and a Metadata Type to help extract the house number / first line of the address.
+This repository also includes a new custom field on the Contact, and a Metadata Type to help extract the house number / first line of the address. You are welcome to use this field in other automations too.
 
 # Contributing
 
