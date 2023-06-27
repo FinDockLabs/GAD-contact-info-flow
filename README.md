@@ -3,33 +3,35 @@
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
 
-# Salesforce DX Project: Next Steps
+# Flow: Add Contact address information to FinDock Gift Aid Declaration
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A simple flow that triggers on the creation of a new Gift Aid Declaration (where Postcode or House Number are blank) to copy the address details (Postcode and House Number) to the fields on the GAD.
 
-## How Do You Plan to Deploy Your Changes?
+## Requirements
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+This flow assumes that you have FinDock and NPSP installed, along with the FinDock for NPSP package, and the Gift Aid for FinDock package.
 
-## Configure Your Salesforce DX Project
+## Installation
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Install the and activate the flow (GAD - Create). To deploy the flow to your Salesforce environment, you can:
+- use `sfdx`.
+- press the "Deploy to Salesforce" button at the top of this README and then press "Login to Salesforce" in the top right of your screen.
+- any other deployment method you prefer.
 
-## Read All About It
+## Notes
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+This is only meant to be a starter to get you going - feel free to customise this flow to meet the needs of your nonprofit with additional fields and actions.
 
-## Contributing
+This repository also include a new custom field on the Contact, and a Metadata Type to help extract the house number / first line of the address.
+
+# Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via an issue or any other method with FinDock before making a change.
 
-## Support
+# Support
 
 FinDock Labs is a non-supported group in FinDock that releases applications. Despite the name, assistance for any of these applications is not provided by FinDock Support because they are not officially supported features. For a list of these apps, visit the FinDock Labs account on Github. 
 
-## License
+# License
 
 This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details
